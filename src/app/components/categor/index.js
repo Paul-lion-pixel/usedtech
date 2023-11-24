@@ -31,8 +31,8 @@ function Categor() {
                 }
             >
                 {categories.map((value, i) => (
-                    <Link  href={`/home/goods/${value.urlValue}`}>
-                 <li key={value} className={styles.categories_Item}>
+                    <Link key={value.urlValue}  href={`/home/goods/${value.urlValue}`}>
+                 <li key={value.urlValue} className={styles.categories_Item}>
                  {value.name}
                         <Image
                             height={150}
