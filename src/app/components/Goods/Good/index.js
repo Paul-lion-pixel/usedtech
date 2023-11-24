@@ -21,8 +21,8 @@ const removeGood = async (_id) => {
     return item.replace('https://usedtech-fb06c88c0961.herokuapp.com/uploads', '');
   });
   try {
-    await axios.post("/removeImages",{ urls: urlsToDelete }); 
-    await axios.post("/removeImage", { urlToDelete: urlToDelete }); 
+    urlsToDelete && await axios.post("/removeImages",{ urls: urlsToDelete }); 
+    urlToDelete && await axios.post("/removeImage", { urlToDelete: urlToDelete }); 
     dispatch(fetchRemoveGoods(_id));
   } catch(error) {
     console.error('Помилка видалення файлу:', error);
