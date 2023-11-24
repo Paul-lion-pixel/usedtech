@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.1"
-  },
-  "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "react-content-loader": "^6.2.1",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
+    "react-paginate": "^8.2.0",
+    "react-redux": "^8.1.2",
+    "redux": "^4.2.1"
   }
 }
