@@ -162,7 +162,7 @@ function Create(props) {
     <option className={styles.option}  value="paverbanks">   Павербанки</option>
     <option className={styles.option}  value="coffemachines">Кавові машини</option>
     <option className={styles.option}  value="printmachines">Друкарське обладнання</option>
-    <option className={styles.option}  value="pc">Комп'ютери</option>
+    <option className={styles.option}  value="pc">Комп&apos;ютери</option>
   </select>
   {errors.category && <span style={{color:"red"}}>snajdshb</span>}
 </div>
