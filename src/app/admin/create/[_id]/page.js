@@ -127,6 +127,7 @@ function Create(props) {
     className={styles.inputPhoto} 
     type="file" 
     id="img1" 
+    required
   />
    { imgUrl && <div className={styles.phoitem}> 
  <img width={100} height={100} src={imgUrl} alt="product" /> 
@@ -142,6 +143,7 @@ function Create(props) {
     type="file" 
     multiple
     id="imgsSlider" 
+    required
   />
   <div className={styles.imgs}>
   {imgUrls.map((item, index) => <div  key={item}  className={styles.phoitem}> 
