@@ -144,9 +144,9 @@ function Create(props) {
     id="imgsSlider" 
   />
   <div className={styles.imgs}>
-  {imgUrls.map((item, index) => <div className={styles.phoitem}> 
+  {imgUrls.map((item, index) => <div  key={item}  className={styles.phoitem}> 
   <img key={item} width={100} height={100} src={item} alt={`product ${index}`} /> 
-  <button onClick={(e) => handleDeleteImage(e, index)} className={styles.butDel}>Видалити</button>
+  <button  key={item}  onClick={(e) => handleDeleteImage(e, index)} className={styles.butDel}>Видалити</button>
   </div>
   )}
   </div>
